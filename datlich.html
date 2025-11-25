@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt lịch khám - Trung tâm Hỗ trợ Sức khỏe Lưu Đăng Dương (RETY)</title>
+  <link rel="stylesheet" href="BTL.css">
+</head>
+<body>
+  <header>
+    <h1>Trung tâm Hỗ trợ Sức khỏe Lưu Đăng Dương (RETY)</h1>
+    <nav>
+      <ul>
+        <li><a href="BTL.html">Trang chủ</a></li>
+        <li><a href="dichvu.html">Dịch vụ & Chuyên khoa</a></li>
+        <li><a href="datlich.html" class="active">Đặt lịch</a></li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="booking-section">
+      <h2>🗓️ Đặt lịch khám</h2>
+      <p>Vui lòng điền đầy đủ thông tin dưới đây để đặt lịch khám tại Trung tâm Hỗ trợ Sức khỏe Lưu Đăng Dương (RETY). Chúng tôi sẽ liên hệ xác nhận với bạn trong thời gian sớm nhất.</p>
+      
+      <form class="booking-form">
+        <label for="fullname">Họ và tên:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="department">Chọn chuyên khoa:</label>
+        <select id="department" name="department" required>
+          <option value="">-- Chọn chuyên khoa --</option>
+          <option value="kham-tong-quat">Khám tổng quát</option>
+          <option value="noi-tiet">Nội tiết</option>
+          <option value="da-lieu">Da liễu</option>
+          <option value="tim-mach">Tim mạch</option>
+          <option value="nhi">Nhi khoa</option>
+        </select>
+
+        <label for="doctor">Chọn bác sĩ (nếu có):</label>
+        <input type="text" id="doctor" name="doctor" placeholder="VD: BS. Nguyễn Minh">
+
+        <label for="date">Ngày khám:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Giờ khám:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="note">Ghi chú (nếu có):</label>
+        <textarea id="note" name="note" rows="4" placeholder="Ghi chú thêm về tình trạng sức khỏe của bạn..."></textarea>
+
+        <form action="thanhcong.html" method="get" class="booking-form">
+          <!-- các input như trên -->
+          <button type="submit" class="btn-primary">Đặt lịch ngay</button>
+        </form>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Trung tâm Hỗ trợ Sức khỏe Lưu Đăng Dương (RETY) — Mọi quyền được bảo lưu.</p>
+  </footer>
+</body>
+</html>
